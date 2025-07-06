@@ -58,18 +58,18 @@ Gurukul is a modern, scalable e-learning platform developed as part of my intern
 
 <!-- Replace these image paths with your actual screenshots -->
 ### User Dashboard  
-![User Dashboard](screenshots/user-dashboard.png)![Screenshot 2025-07-06 174024](https://github.com/user-attachments/assets/8d50444f-f94a-456e-b902-f7adbedbb15e)
+![User Dashboard]()![Screenshot 2025-07-06 174024](https://github.com/user-attachments/assets/8d50444f-f94a-456e-b902-f7adbedbb15e)
 
 
 ### Admin Panel  
-![Admin Panel](screenshots/admin-panel.png)![Screenshot 2025-07-06 175506](https://github.com/user-attachments/assets/748b61ce-56de-4ee5-929e-64dda89b815d)
+![Admin Panel]()![Screenshot 2025-07-06 175506](https://github.com/user-attachments/assets/748b61ce-56de-4ee5-929e-64dda89b815d)
 
 ### Course Reviews & Ratings  
-![Course Reviews](screenshots/course-reviews.png)![Screenshot 2025-07-06 180630](https://github.com/user-attachments/assets/d29a9286-6fcd-46a5-8bfe-04f20569ce8e)
+![Course Reviews]()![Screenshot 2025-07-06 180630](https://github.com/user-attachments/assets/d29a9286-6fcd-46a5-8bfe-04f20569ce8e)
 
 
 ### Payment Flow  
-![Payment Integration](screenshots/payment-flow.png)![Screenshot 2025-07-06 175043](https://github.com/user-attachments/assets/456dd058-e6b8-43e6-8766-1a767012f77e)
+![Payment Integration]()![Screenshot 2025-07-06 175043](https://github.com/user-attachments/assets/456dd058-e6b8-43e6-8766-1a767012f77e)
 
 
 ---
