@@ -2,8 +2,8 @@ import Razorpay from 'razorpay';
 import crypto from 'crypto';
 import { PaymentOrder, PaymentVerification, RazorpayOrder } from '../types/payment';
 import { logger } from '../utils/logger';
-import Payment from '../models/Payment';
-import Enrollment from '../models/Enrollment';
+import { Payment } from '../models/Payment';
+import { Enrollment } from '../models/Enrollment';
 
 export class PaymentService {
   private razorpay: Razorpay;
@@ -54,7 +54,7 @@ export class PaymentService {
         amount: orderData.amount,
         courseId: orderData.courseId,
         userId: orderData.userId,
-        status: 'PENDING',
+        status: 'created',
         currency: options.currency,
         receipt: options.receipt,
         createdAt: new Date()
@@ -63,7 +63,7 @@ export class PaymentService {
       await payment.save();
 
       // Remove or comment out logger.info('Order created successfully:', { orderId: order.id });
-      return order;
+      return order as RazorpayOrder;
     } catch (error) {
       logger.error('Error creating Razorpay order:', error);
       if (error instanceof Error) {
@@ -97,7 +97,7 @@ export class PaymentService {
           { orderId: razorpay_order_id },
           {
             $set: {
-              status: 'COMPLETED',
+              status: 'completed',
               paymentId: razorpay_payment_id,
               updatedAt: new Date()
             }
@@ -127,7 +127,7 @@ export class PaymentService {
         throw new Error(`Payment not found for order: ${orderId}`);
       }
 
-      if (payment.status !== 'COMPLETED') {
+      if (payment.status !== 'completed') {
         throw new Error(`Payment not completed for order: ${orderId}`);
       }
 

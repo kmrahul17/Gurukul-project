@@ -14,7 +14,7 @@ export interface PaymentVerification {
 export interface RazorpayOrder {
   id: string;
   entity: string;
-  amount: number;
+  amount: string | number;
   amount_paid: number;
   amount_due: number;
   currency: string;
